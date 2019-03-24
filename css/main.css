@@ -1,0 +1,201 @@
+
+html {
+    scroll-behavior: smooth;
+  }
+
+.section-headings {
+    font-weight: bolder;
+}
+
+/* Header Design */
+.my-header {
+    background-image: url(../img/header.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 700px;
+    margin: 0px;
+    padding: 0px;
+    margin-top: -100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.my-header h1 {
+    font-weight: bolder;
+    margin: 0px;
+    color: white;
+    text-shadow: 2px 1px 5px rgba(5,4,4,0.49);
+}
+
+/* Navigation Styling */
+
+#donate-button {
+    /* background-color: rgb(255, 0, 221); */
+    width: 150px;
+    text-align: center;
+}
+
+nav {
+    opacity: 0.6;
+}
+
+/* Serives Section */
+
+.services {
+    display: flex;
+    justify-content: center;
+}
+
+.service {
+    width: 33.33%;
+    text-align: center;
+}
+
+.service p, h3 {
+    color: white;
+}
+
+.serv-head:hover {
+    font-size: 3rem;
+    opacity: 0.3;
+    transition: 0.3s;
+}
+
+/* Cards Sections */
+
+.card-content > p {
+    font-weight: bolder;
+    font-size: 1.1rem;
+}
+
+.card-action {
+    display: flex;
+    flex-direction: row;
+    /* font-size: 1%; */
+}
+
+
+/* Qoutation Section */
+
+.qoutation {
+    background-color: #213e8c;
+    padding: 20px;
+    padding-left: 17%;
+    padding-right: 17%;
+    color: white;
+}
+
+.qoute {
+    font-style: italic;
+    opacity: 0.9;
+}
+
+.author {
+    opacity: 0.9;
+}
+
+/* Events */
+
+.collection {
+    border: none !important;
+}
+
+.events {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.event-detail {
+    margin: 20px;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.date {
+    display: inline-block;
+}
+
+.sub-date {
+    display: inline;
+}
+
+sub {
+    font-size: 25px;
+    opacity: 0.3;
+    /* margin-left: -44px; */
+}
+
+sup {
+    font-size: 25px;
+    margin-left: -55px;
+    opacity: 0.5;
+}
+
+
+/* Join Us */
+
+.join-us {
+    background-color: #213e8c;
+
+}
+
+.sub-title {
+    color: white;
+}
+
+/* Footer Design */
+
+.list-title {
+    font-weight: bold;
+    font-size: 25px;
+
+}
+
+.list li {
+    padding: 10px;
+}
+
+/* Sub Footer Design */
+
+.sub-footer {
+    background-color: #213e8c;
+    color: white;
+    font-size: 10px;
+    padding: 10px;
+}
+
+/* Animations */
+
+#move h1:hover {
+    /* line-height: 2em; */
+    /* position: relative; */
+    animation: head;
+    animation-duration: 2s;
+    /* //stays the animations */
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes head {
+    0% {
+      left: -600px;
+    }
+    100% {
+      left: 00px;
+    }
+  }
+
+
+/* Responsive Design */ 
+
+@media only screen and (max-width: 570px) {
+    /* Service Section */
+    .services {
+        flex-direction: column;
+    }
+    .service {
+        width: 100%;
+    }
+}
